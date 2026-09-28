@@ -1,16 +1,19 @@
-# This is a sample Python script.
-
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+class Cliente:
+    def __init__(self,numcliente,nombre,saldo):
+        self.numcliente=numcliente
+        self.nombre=nombre
+        self.saldo=saldo
 
 
-# Press the green button in the gutter to run the script.
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    cliente=Cliente("Ángel",1000)
+    o=0
+    while o!=4:
+        print("Que quieres hacer")
+        print("1.Cargar datos del cliente")
+        print("2.consultar cuenta (depositar e ingresar)")
+        o=int(input("Introduce la opción"))
+        if o==1:
+            print("Cargando datos del cliente\n")
+            print()
